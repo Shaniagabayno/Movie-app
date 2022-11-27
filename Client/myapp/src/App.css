@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Urbanist:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Login Page  */
+
+#main_bg_wrapper {
+  background: fixed center/cover no-repeat url("./Wallpaper/marvel.jpg");
+  min-height: 100vh;
+  text-align: center;
+}
+
+#inner-DivLogin {
+  padding: .9em;
+  padding-top: 3em;
+  text-align: center;
+}
+
+/*Title and label text*/
+
+#logo_title {
+  font: 2rem "Staatliches", cursive;
+  color: rgb(252 194 139);
+  letter-spacing: .3rem;
+  text-shadow: 5px 5px 4px rgb(10 0 0 / 93%);
+  text-align: center;
+  background: linear-gradient(to bottom, #ffcc99 0%, #740027 100%);
+  padding: .25em;
+}
+
+.label_form_login {
+  font: 1rem "Staatliches", cursive;
+  letter-spacing: 1px;
+  text-shadow: 2px 3px 1px rgb(10 0 0 / 93%);
+  color: #ffff;
+}
+
+.input-InputLogin {
+  font: 1rem 'Urbanist', sans-serif;
+  color: #ffff;
+  padding: 4px;
+  border: hidden;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #fdc997;
+  position: relative;
+  margin-bottom: .7em;
+}
+
+.input-InputLogin:hover {
+  border-bottom: 2px solid #c2e397;
+}
+
+.icon {
+  cursor: pointer;
+  color: rgb(255, 226, 164)
+}
+
+
+/* Login Button */
+
+.btnLogin {
+  font: 1.4rem "Staatliches", cursive;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: all 150ms ease-in-out;
+  color: rgb(252 194 139);
+  padding: .2em 1.5em;
+  margin-bottom: 0.4em;
+  border: 1px solid rgb(118, 47, 8);
+  background: none;
+  cursor: pointer;
+}
+
+.btnLogin:hover {
+  transition-duration: 0.4s;
+  box-shadow: 0 0 10px 0 rgb(169, 37, 37) inset, 0 0 10px 4px rgb(255, 219, 157);
+}
+
+/* Media Queries Login Page*/
+
+/*The smallest dimension*/
+@media (min-width:50px) and (max-width:229px) {
+
+  #main_bg_wrapper {
+    height: 400vh;
+    width: max-content;
+    padding-left: 1.1em;
+  }
+
+  #logo_title {
+    width: max-content;
+    padding-left: 2.05em;
+  }
+
+  #inner-DivLogin {
+    text-align: -webkit-auto;
+  }
+}
+
+/* Max width and less*/
+@media (max-width:306px) {
+  #inner-DivLogin {
+    padding: 1em;
+    padding-top: 4em;
+    text-align: -webkit-auto;
+  }
+
+  .label_form_login {
+    font: .8rem "Staatliches", cursive;
+  }
+
+  .btnLogin {
+    font: 1rem "Staatliches", cursive;
+  }
+}
+
+/*From Mobile to Bigger Screen */
+
+@media (min-width:768px) {
+  #logo_title {
+    font: 3.1rem "Staatliches", cursive;
+  }
+
+  .label_form_login {
+    font: 1.3rem "Staatliches", cursive;
+  }
+
+  .input-InputLogin {
+    font: 1.2rem 'Urbanist', sans-serif;
+  }
+}
+
+/**** MSG ALERT CSS ****/
+#msgAlert {
+  font: 1.503rem "Staatliches", cursive;
+  color: rgb(244, 69, 69);
+  letter-spacing: 1.1px;
+}
+
+#warningDiv {
+  background: #00000086;
+  margin: auto;
+  padding: 0.5em;
+  width: 50%;
+  justify-content: center;
+}
+
+/*End Login Page*/
+
+/******* HOMEPAGE *******/
+
+.homePage {
+  padding-top: 1.2em;
+}
+
+.username-title {
+  font: 1.8em "Staatliches", cursive;
+  background: -webkit-linear-gradient(rgb(255, 218, 164), rgb(199, 55, 55));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btnNavigate {
+  font-family: "Quattrocento", serif;
+  cursor: pointer;
+  float: right;
+  padding: 0.8em;
+  margin-right: 0.6em;
+  --color: rgb(255, 255, 255);
+  --hover: #ef8f6e;
+}
+
+.btnNavigate:hover,
+.btnNavigate:focus {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+  border-color: var(--hover);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+/**** END HOMEPAGE ****/
+
+/** MOVIES PAGE **/
+
+.main-page {
+  text-align: center;
+  padding-bottom: 0.8em;
+}
+
+.data-container {
+  padding: 0.4em;
+  margin: auto;
+  margin-bottom: 0.8em;
+  width: 50%;
+  border: 3px double #ef8f6e;
+  border-image: linear-gradient(#ef8f6e, rgb(197, 67, 7)) 50 / 4px;
+}
+
+.movie-img-subs-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.subscribed--users-container {
+  border: 1px double #ef8f6e;
+  height: fit-content;
+  padding: 1.5em;
+}
+
+.header-title,
+h2 {
+  background: -webkit-linear-gradient(rgb(251, 155, 155), rgb(109, 24, 24));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  text-shadow: 5px 1px 5px #ac2a2a;
+  font-size: 1.6rem;
+}
+
+
+/*BUTTONS*/
+
+.btn-link {
+  font: 1rem "Quattrocento", serif;
+  padding: 0.3em;
+  margin: 0.5em 0.2em 0;
+  border-radius: 5px;
+  cursor: pointer;
+  --hover: #ffa260;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+}
+
+button:hover,
+button:focus {
+  border-color: var(--hover);
+}
+
+/**END BUTTONS*/
+
+.navigation-link {
+  text-decoration-color: #ffa260;
+  color: inherit;
+}
+
+input {
+  padding: 0.125em;
+  outline: none;
+  border: 1px solid #ef8f6e;
+  font-family: inherit;
+  background: none;
+  font-size: 1.2rem;
+  color: #ffff;
+  margin: 0.3em;
+}
+
+.MovieImg {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
+ul li {
+  list-style-type: none;
+  padding-bottom: 0.6em;
+}
+
+/* ***** MEDIA QUERIES HOMEPAGE********/
+
+@media(min-width:100px) and (max-width:768px) {
+
+  /*The main container in movie page*/
+  .data-container {
+    padding: 0.4em;
+    margin: 1em;
+    margin-bottom: 0.8em;
+    width: auto;
+  }
+
+  /*the containers inside the main con */
+
+  .movie-img-subs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  .subscribed--users-container {
+    border: 1px double #ef8f6e;
+    margin: 0.5em;
+    padding: 0.125em;
+  }
+
+  /** NAVIGATION***/
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+
+  .btnNavigate {
+    font-size: 0.6rem;
+    padding: 0.2em;
+  }
+
+  .btn-link {
+    font-size: 0.8rem;
+  }
+
+  input {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+
+  /**HEADERS**/
+
+  .header-title,
+  h2 {
+    font-size: 1.1rem;
+    margin-top: 0.4em;
+  }
+
+  .username-title {
+    font-size: 1.1rem;
+  }
+
+  @media(min-width :367px) {
+    .top-nav {
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    .btnNavigate {
+      padding: 0.4em;
+    }
+  }
+
+  @media(min-width :405px) {
+    .username-title {
+      font-size: 1.4rem;
+    }
+
+    .btnNavigate {
+      padding: 0.6em;
+    }
+
+    @media(min-width :467px) {
+      .username-title {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media(min-width :600px) {
+
+      .movie-img-subs-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .subscribed--users-container {
+        padding: 2em;
+      }
+    }
+  }
+}
+
+@media(min-width:768px) and (max-width:1279px) {
+
+  /*The main container in movie page*/
+  .data-container {
+    padding: 0.4em;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 0.8em;
+
+  }
+
+  /*the container inside the main con */
+  .subscribed--users-container {
+    border: 1px double #ef8f6e;
+    margin: 0.8em;
+    padding: 0.125em;
+  }
+
+  .btnNavigate {
+    font-size: 0.8rem;
+  }
+}
+
+/*LARGEST SCREEN*/
+
+@media(min-width:1600px) and (max-width:3840px) {
+  .MovieImg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .subscribed--users-container {
+    border: 6px double #ef8f6e;
+    font-size: 1.5rem;
+  }
+
+  .username-title {
+    font-size: 2.4rem;
+  }
+
+  .btn-link {
+    font-size: 1.3rem;
+  }
+
+  span {
+    font-size: 1.8rem;
+  }
+
+  input {
+    font-size: 1.5rem;
+  }
+}
+
+/**** ADD/EDIT MOVIE PAGES ***/
+.add-edit-page {
+  text-align: center;
+  margin-top: 2em;
+  background: fixed no-repeat center/cover url("./Wallpaper/wallpaperflare.com_wallpaper.jpg");
+  padding: 2em;
+}
+
+.form-header-title {
+  font: 35px "Staatliches", cursive;
+  background: -webkit-linear-gradient(rgb(255, 218, 164), rgb(199, 55, 55));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0.2em;
+}
+
+.forms-info {
+  font: 20px "Staatliches", cursive;
+}
+
+
+/*** SUBS PAGE***/
+
+.main-page-subs {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+main {
+  width: 100%;
+}
+
+.left_side {
+  float: left;
+  width: 50%;
+  padding-top: 0.9em;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/**** MEDIA QUERIES ***/
+
+@media(max-width: 400px) {
+  main {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .left_side {
+    width: 100%;
+  }
+
+  .add-edit-page {
+    background-size: cover;
+    background-position: 70% 20%;
+    width: max-content;
+  }
+
+}
